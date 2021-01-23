@@ -51,7 +51,7 @@ var newGreeting = function(name)
 //Create an array called groceries with the values
 //"apples", "milk", "eggs", "bread"
 
-var groceries = ['apples', 'milk', 'eggs', 'bread'] //Code Here
+let groceries = ['apples', 'milk', 'eggs', 'bread'] //Code Here
 
 //////////////////PROBLEM 9////////////////////
 
@@ -82,10 +82,15 @@ var devmountainClassPet = dog['name'];//Code Here
 // with NAMEPARAM being the name parameter being passed in (not literally NAMEPARAM)
 
 function nameCheck (name) {
-  if (name = 'Steven');
+  if (name == 'Steven'); {
+    return 'What is up Steven'}; 
+  if (name == 'Bryan') ; {
+    return 'Hey Bryan'};
+  else {
+    return `Cool name, ${name}`;
+  }
+  }
 
-
-}
 
 // Code here
 
@@ -117,10 +122,18 @@ add(3,5);
 // If the passed in color equals 'black', return 'so trendy'
 // Otherwise, you should return the string 'you need to evaluate your favorite color choice'
 
-function faveColorFinder ("color") {
-  if color == "red" }
+function faveColorFinder (color) {
+  if color == 'red' {
+    return 'red is a great color'};
+  if color = 'green' {
+    return 'green is a solid favorite color'}
+  if color = 'black';{
+    return 'so trendy';}
+  else {
+    return 'you need to evaluate your favorite color choice'
+  }
+  } 
 
-}
 
 // Code here
 
