@@ -2,13 +2,13 @@
 
 //Create a variable called myName that is a string data type
 
-var myName = 'Ashley'; //Code here
+let myName = 'Ashley'; //Code here
 
 //////////////////PROBLEM 2////////////////////
 
 //Create a variable called myAge that is a number data type
 
-var myAge = 33; //Code here
+let myAge = 33; //Code here
 
 //////////////////PROBLEM 3////////////////////
 
@@ -20,13 +20,13 @@ var lovesCode = true; //Code here
 
 //Create a variable called greatestFear that is undefined because we fear nothing
 
-var greatestFear = undefined //Code here
+var greatestFear  //Code here
 
 //////////////////PROBLEM 5////////////////////
 
 //Create a variable called devMountainGoal that is null because we are just starting out
 
-var devMoutainGoal = null //Code here
+var devMountainGoal = null; //Code here
 
 //////////////////PROBLEM 6////////////////////
 
@@ -36,7 +36,7 @@ var devMoutainGoal = null //Code here
 //plus the value of the name parameter.
 
 function greeting(name) {
-  return "Hello, " + name; }
+  return "Hello, " + name }
 //Code here
 
 //////////////////PROBLEM 7////////////////////
@@ -44,14 +44,16 @@ function greeting(name) {
 //Write a function expression called newGreeting.
 //Give it the same functionality as the function greeting in Problem 6.
 
-var newGreeting = function(name)
+var newGreeting = function(name) {
+  return "Hello, " + name
+}
 
 //////////////////PROBLEM 8////////////////////
 
 //Create an array called groceries with the values
 //"apples", "milk", "eggs", "bread"
 
-let groceries = ['apples', 'milk', 'eggs', 'bread'] //Code Here
+let groceries = ['apples', 'milk', 'eggs', 'bread']; //Code Here
 
 //////////////////PROBLEM 9////////////////////
 
@@ -70,7 +72,7 @@ var dog = {
 //...access the dog's name from the object and assign it to a
 //variable called devMountainClassPet.
 
-var devmountainClassPet = dog['name'];//Code Here
+var devMountainClassPet = dog['name'];//Code Here
 
 //////////////////PROBLEM 10////////////////////
 
@@ -82,14 +84,14 @@ var devmountainClassPet = dog['name'];//Code Here
 // with NAMEPARAM being the name parameter being passed in (not literally NAMEPARAM)
 
 function nameCheck (name) {
-  if (name == 'Steven'); {
-    return 'What is up Steven'}; 
-  if (name == 'Bryan') ; {
-    return 'Hey Bryan'};
-  else {
-    return `Cool name, ${name}`;
+  if (name === "Steven") {
+    return "What is up Steven?"
+  } if (name === "Bryan") {
+    return "Hey Bryan!"
+  } else {
+    return `Cool name, ${name}`
   }
-  }
+};
 
 
 // Code here
@@ -109,7 +111,7 @@ return num1 + num2;
 //Now invoke add, passing in the numbers 3 and 4
 //storing the result in the variable mathSum.
 
-add(3,5);
+let mathSum = add(3,4);
 
 //Code Here
 
@@ -123,16 +125,16 @@ add(3,5);
 // Otherwise, you should return the string 'you need to evaluate your favorite color choice'
 
 function faveColorFinder (color) {
-  if color == 'red' {
-    return 'red is a great color'};
-  if color = 'green' {
+  if (color === 'red') {
+    return 'red is a great color'}
+  else if (color === 'green') {
     return 'green is a solid favorite color'}
-  if color = 'black';{
-    return 'so trendy';}
-  else {
-    return 'you need to evaluate your favorite color choice'
-  }
-  } 
+  else if (color === 'black'){
+    return 'so trendy'}
+  else { 
+    return "you need to evaluate your favorite color choice"
+    }
+  };
 
 
 // Code here
@@ -162,13 +164,13 @@ function pond() {
 let globalScope = ["duck"];
 
 //This array should contain the variable names (as strings) accessible in the bathroom function.
-let bathroomScope = ["sailorDuck", "rubberDuck"];
+let bathroomScope = ["duck", "rubberDuck"];
 
 //This array should contain the variable names (as strings) accessible in the bathtub function.
-let bathtubScope = ["sailorDuck"];
+let bathtubScope = ["duck", "rubberDuck", "sailorDuck"];
 
 //This array should contain the variable names (as strings) accessible in the pond function.
-let pondScope = ["realDuck"];
+let pondScope = ["duck","realDuck"];
 
 //////////////////PROBLEM 14////////////////////
 
